@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Terranion</title>
+</head>
+<body>
+  <h1>I couldn't get this stupid thing to work, so instead you can just download the offline version.</h1>
+  <h2>To use it, you just extract the zip, and open up the html file.</h2>
+  <p>If the download didn’t start automatically, <a href="Terranion.zip" download>click here</a>.</p>
+
+  <script>
+    window.onload = function () {
+      const link = document.createElement('a');
+      link.href = 'Terranion.zip';
+      link.download = 'Terranion.zip';
+      document.body.appendChild(link);
+      link.click();
+      document.body.removeChild(link);
+    };
+  </script>
+</body>
+</html>
